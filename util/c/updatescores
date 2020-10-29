@@ -6,4 +6,5 @@ do
   echo "Processing $f"
   exe/./distance $f ../../scores/all.txt
 done
+exe/./sort ../../scores/all.txt ../../scores/sorted.txt
 echo "Done"
