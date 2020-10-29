@@ -72,5 +72,7 @@ int main(int argc, char *argv[])
     fwrite(buf,1,n,fp);
     fclose(fp);
 
-    //plot 'route100' binary format='%char' using 1:2
+    //set term png
+    //set output 'test.png'
+    //plot 'route100' binary format='%char' using 1:2 w linespoints
 }
