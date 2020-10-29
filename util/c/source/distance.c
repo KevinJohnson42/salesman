@@ -16,9 +16,24 @@ double distance(point a, point b)
     return sqrt(dx*dx+dy*dy);
 }
 
+int basename(char*x)
+{
+    int i=0;
+    int last=0;
+    while(x[i])
+    {
+        if (x[i] == '/')
+        {
+            last = i+1;
+        }
+        i++;
+    }
+    return last;
+}
+
 int main(int argc, char *argv[])
 {
-    if(argc != 3)
+    if( (argc != 3) && (argc != 2) )
     {
         printf("Incorrect number of arguments\n");
         exit(1);
@@ -70,10 +85,15 @@ int main(int argc, char *argv[])
     printf("Distance = %f\n",total);
 
     //Write result
-    fp = fopen(argv[2],"a");
-    if(fp==0){fp = fopen(argv[2],"w");}
-    fprintf(fp,"%s %f\n",argv[1],total);
-    fclose(fp);
+    if (argc == 3)
+    {
+        fp = fopen(argv[2],"a");
+        if(fp==0){fp = fopen(argv[2],"w");}
+        int offset = basename(argv[1]);
+        fprintf(fp,"%s %f\n",argv[1]+offset,total);
+        fclose(fp);
+    }
+
 
     return 0;
 }
