@@ -1,5 +1,4 @@
-# salesman
-Traveling Salesman
+# Traveling Salesman Problem
 
 Welcome to the traveling salesman competition.
 
