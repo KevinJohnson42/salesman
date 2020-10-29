@@ -38,7 +38,7 @@ c667 d45e e958 ec4a f854 ff51 3266 5a76
 b70d 9f33 8de7 9ac9 abba b2ab 46e3 5aa3
 c27c                                   
 
-Note: The return to origin (0xc6,0x67) is ommited at the end. It is assumed since the salesman must return home.
+Note: The return to origin (0xc6,0x67) is ommited at the end because it is assumed that the salesman must return home.
 
 
 Rules
