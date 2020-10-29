@@ -39,7 +39,7 @@ In route25, there are 50 bytes. The first two bytes are the starting point.
     x1 = 0x73 = 115
     y1 = 0x69 = 105
 
-...
+    ...
 
     Point 24
     x24 = 0xb2 = -78
