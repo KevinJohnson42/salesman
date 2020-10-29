@@ -18,7 +18,7 @@ The distances are located in "scores".
 Create a directory with your name and start writing some code. Place your results in "results" then contact kevin to update scores.
 
 ### Rules
-1. A file containing the result should start with 0xc6,0x67 because you are not allowed to change the starting point. All routes have the same starting point.
+1. A file containing the result should start with 0x67,0xc6 because you are not allowed to change the starting point. All routes have the same starting point.
 2. The result file should be the same length as the route.
 3. There should be no duplicate points (This includes both the original route dataset and in the results).
 4. The results should contain the same points as the route, but rearranged in whatever order. No cheating.
@@ -26,35 +26,38 @@ Create a directory with your name and start writing some code. Place your result
 ### Example
 In route25, there are 50 bytes. The first two bytes are the starting point. 
 
-    c667 7369 ff51 ec4a cd29 abba fbf2 46e3
-    c27c f854 e81b 8de7 5a76 632e 9f33 9ac9
-    3266 b70d 5831 5aa3 5d25 1705 e958 d45e
-    b2ab                                   
+    67 c6 69 73 51 ff 4a ec  29 cd ba ab f2 fb e3 46
+    7c c2 54 f8 1b e8 e7 8d  76 5a 2e 63 33 9f c9 9a
+    66 32 0d b7 31 58 a3 5a  25 5d 05 17 58 e9 5e d4
+    ab b2                                           
+                          
 
     Point 0
-    x0 = 0xc6 = -58
-    y0 = 0x67 = 103
+    x0 = 0x67 = 103
+    y0 = 0xc6 = -58
+    
 
     Point 1
-    x1 = 0x73 = 115
-    y1 = 0x69 = 105
-
+    x1 = 0x69 = 105
+    y1 = 0x73 = 115
+    
     ...
 
     Point 24
-    x24 = 0xb2 = -78
-    y24 = 0xab = -85
+    x24 = 0xab = -85
+    y24 = 0xb2 = -78
+    
 
 A soultion to route25 with distance = 1217.516937
 
-    c667 d45e e958 ec4a f854 ff51 3266 5a76
-    7369 632e 5d25 5831 1705 fbf2 e81b cd29
-    b70d 9f33 8de7 9ac9 abba b2ab 46e3 5aa3
-    c27c                                   
+    67 c6 5e d4 58 e9 4a ec  54 f8 51 ff 66 32 76 5a
+    69 73 2e 63 25 5d 31 58  05 17 f2 fb 1b e8 29 cd
+    0d b7 33 9f e7 8d c9 9a  ba ab ab b2 e3 46 a3 5a
+    7c c2                                           
 
 ![Alt text](images/KJ_route25.png?raw=true "KJ_route25")
 
 
-Note: The return to origin (0xc6,0x67) is ommited at the end because it is assumed that the salesman must return home.
+Note: The return to origin (0x67,0xc6) is ommited at the end because it is assumed that the salesman must return home.
 
 

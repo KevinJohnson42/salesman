@@ -74,5 +74,5 @@ int main(int argc, char *argv[])
 
     //set term png
     //set output 'test.png'
-    //plot 'route100' binary format='%char' using 2:1 w linespoints
+    //plot 'route100' binary format='%char' using 1:2 w linespoints
 }
