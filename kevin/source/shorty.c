@@ -41,6 +41,7 @@ int min_distance(point*p, int a, int n)
 
 int main(int argc, char *argv[])
 {
+    //./exe input output
     if(argc != 3)
     {
         printf("Incorrect number of arguments\n");
@@ -70,7 +71,7 @@ int main(int argc, char *argv[])
     fclose(fp);
 
 
-    //Generate random points
+    //Extract points
     n /= 2;
     point*p=malloc(sizeof(point)*n);
     for(int i=0;i<n;i++)
@@ -143,7 +144,5 @@ int main(int argc, char *argv[])
     }
     fclose(fp);
     */
-
-
 
 }
