@@ -1,0 +1,16 @@
+#!/bin/bash
+FILES=../routes/*
+for f in $FILES
+do
+  echo "Processing $f"
+  b=$(basename $f)
+  exe/./shorty $f ../results/$b
+done
+echo "Done"
+
+#exe/./shorty ../routes/route25 ../results/KJ_route25
+#exe/./shorty ../routes/route50 ../results/KJ_route50
+#exe/./shorty ../routes/route75 ../results/KJ_route75
+#exe/./shorty ../routes/route100 ../results/KJ_route100
+#exe/./shorty ../routes/route500 ../results/KJ_route500
+#exe/./shorty ../routes/route1000 ../results/KJ_route1000

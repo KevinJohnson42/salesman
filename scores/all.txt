@@ -1,0 +1,6 @@
+../../results/KJ_route100 2509.923349
+../../results/KJ_route1000 7373.864043
+../../results/KJ_route25 1217.516937
+../../results/KJ_route50 1891.245258
+../../results/KJ_route500 5363.327143
+../../results/KJ_route75 2058.572518

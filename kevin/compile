@@ -1,0 +1,2 @@
+#!/bin/bash
+gcc source/shorty.c -o exe/shorty -lm -O3
