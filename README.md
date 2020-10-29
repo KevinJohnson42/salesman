@@ -12,6 +12,7 @@ To get started, create a directory with your name and start writing some code. G
 
 Example: In route25, there are 50 bytes. The first two bytes are the starting point. 
 
+route25
 c667 7369 ff51 ec4a cd29 abba fbf2 46e3
 c27c f854 e81b 8de7 5a76 632e 9f33 9ac9
 3266 b70d 5831 5aa3 5d25 1705 e958 d45e
@@ -31,9 +32,17 @@ Point 24
 x24 = 0xb2 = -78
 y24 = 0xab = -85
 
+A soultion to route25 with distance = 1217.516937
+c667 d45e e958 ec4a f854 ff51 3266 5a76
+7369 632e 5d25 5831 1705 fbf2 e81b cd29
+b70d 9f33 8de7 9ac9 abba b2ab 46e3 5aa3
+c27c                                   
+
+Note: The return to origin (0xc6,0x67) is ommited at the end. It is assumed since the salesman must return home.
+
 
 Rules
 1. A file containing the result should start with 0xc6,0x67 because you are not allowed to change the starting point. All routes have the same starting point.
 2. The result file should be the same length as the route.
-3. There should be no duplicate points (Both in the original route dataset and in the results).
+3. There should be no duplicate points (This includes both the original route dataset and in the results).
 4. The results should contain the same points as the route, but rearranged in whatever order. No cheating.
