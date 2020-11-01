@@ -7,12 +7,12 @@ The results are located in "results". The result file consists of the route poin
 The distances are located in "scores".
 
 ### Top scores
-    KJ_route25   1217.516937
-    KJ_route50   1891.245258
-    KJ_route75   2058.572518
-    KJ_route100  2509.923349
-    KJ_route500  5363.327143
-    KJ_route1000 7373.864043
+KJ2_route25   1100.733427
+KJ2_route50   1828.804881
+KJ2_route75   1983.101872
+KJ2_route100  2355.275030
+KJ2_route500  5203.577905
+KJ2_route1000 7130.381167
 
 ### Getting started
 Create a directory with your name and start writing some code. Place your results in "results" then contact kevin to update scores.
