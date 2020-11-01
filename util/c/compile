@@ -1,4 +1,5 @@
 #!/bin/bash
+mkdir exe
 gcc source/distance.c -o exe/distance -lm -O3
 gcc source/genroute.c -o exe/genroute -O3
 gcc source/sort.c -o exe/sort -lm -O3
