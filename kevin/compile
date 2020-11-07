@@ -2,3 +2,4 @@
 mkdir exe
 gcc source/shorty.c -o exe/shorty -lm -O3
 gcc source/touchup.c -o exe/touchup -lm -O3
+gcc source/double_edge.c -o exe/double_edge -lm -O3

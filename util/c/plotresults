@@ -1,0 +1,7 @@
+#!/bin/bash
+FILES=../../results/*
+for f in $FILES
+do
+  b=$(basename $f)
+  echo "set term png; set output '../../images/$b.png'; plot '$f' binary format='%char' using 1:2 w linespoints" | gnuplot
+done

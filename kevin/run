@@ -5,8 +5,18 @@ for f in $FILES
 do
   echo "Processing $f"
   b=$(basename $f)
-  exe/./shorty $f ../results/KJ_$b
-  exe/./touchup ../results/KJ_$b ../results/KJ2_$b
+
+  echo "Running Shorty"
+  exe/./shorty $f ../results/KJ_shorty_$b
+  
+  echo "Touchup"
+  exe/./touchup ../results/KJ_shorty_$b ../results/KJ_shorty_$b
+
+  echo "Running Double Edge"
+  exe/./double_edge $f ../results/KJ_double_edge_$b
+  
+  echo "Running Touchup"
+  exe/./touchup ../results/KJ_double_edge_$b ../results/KJ_double_edge_$b
 done
 echo "Done"
 

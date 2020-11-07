@@ -8,12 +8,12 @@ The distances are located in "scores".
 
 ### Top scores
 
-    KJ2_route25   1100.733427
-    KJ2_route50   1828.804881
-    KJ2_route75   1983.101872
-    KJ2_route100  2355.275030
-    KJ2_route500  5203.577905
-    KJ2_route1000 7130.381167
+    KJ_double_edge_route25   1100.733427
+    KJ_double_edge_route50   1630.612894
+    KJ_shorty_route75        1983.101872
+    KJ_double_edge_route100  2197.143112
+    KJ_double_edge_route500  4782.509379
+    KJ_double_edge_route1000 6675.472068
 
 ### Getting started
 Create a directory with your name and start writing some code. Place your results in "results" then contact kevin to update scores.
