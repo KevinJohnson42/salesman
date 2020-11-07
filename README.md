@@ -56,7 +56,7 @@ A soultion to route25 with distance = 1217.516937
     0d b7 33 9f e7 8d c9 9a  ba ab ab b2 e3 46 a3 5a
     7c c2                                           
 
-![Alt text](images/KJ_route25.png?raw=true "KJ_route25")
+![Alt text](images/KJ_double_edge_route25.png?raw=true "KJ_double_edge_route25")
 
 
 Note: The return to origin (0x67,0xc6) is ommited at the end because it is assumed that the salesman must return home.
