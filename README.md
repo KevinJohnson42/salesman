@@ -49,16 +49,14 @@ In route25, there are 50 bytes. The first two bytes are the starting point.
     y24 = 0xb2 = -78
     
 
-A soultion to route25 with distance = 1217.516937
+A soultion to route25 with distance = 1100.733427
 
-    67 c6 5e d4 58 e9 4a ec  54 f8 51 ff 66 32 76 5a
-    69 73 2e 63 25 5d 31 58  05 17 f2 fb 1b e8 29 cd
-    0d b7 33 9f e7 8d c9 9a  ba ab ab b2 e3 46 a3 5a
-    7c c2                                           
+    67 c6 7c c2 5e d4 58 e9  4a ec 54 f8 51 ff 66 32
+    76 5a 69 73 31 58 2e 63  25 5d a3 5a e3 46 05 17
+    f2 fb 1b e8 29 cd 33 9f  0d b7 e7 8d c9 9a ba ab
+    ab b2
 
 ![Alt text](images/KJ_double_edge_route25.png?raw=true "KJ_double_edge_route25")
 
 
 Note: The return to origin (0x67,0xc6) is ommited at the end because it is assumed that the salesman must return home.
-
-
