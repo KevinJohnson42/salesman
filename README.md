@@ -10,7 +10,7 @@ The distances are located in "scores".
 
     KJ_rando_route25         1036.948036
     KJ_rando_route50         1421.332014
-    KJ_shorty_route75        1983.101872
+    KJ_rando_route75         1803.545940
     KJ_double_edge_route100  2197.143112
     KJ_double_edge_route500  4782.509379
     KJ_double_edge_route1000 6675.472068

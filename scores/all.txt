@@ -6,6 +6,7 @@ KJ_double_edge_route500 4782.509379
 KJ_double_edge_route75 2073.471324
 KJ_rando_route25 1036.948036
 KJ_rando_route50 1421.332014
+KJ_rando_route75 1803.545940
 KJ_shorty_route100 2355.275030
 KJ_shorty_route1000 7130.381167
 KJ_shorty_route25 1100.733427
