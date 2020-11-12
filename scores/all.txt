@@ -1,3 +1,4 @@
+example_route25 1217.516937
 KJ_double_edge_route100 2197.143112
 KJ_double_edge_route1000 6675.472068
 KJ_double_edge_route25 1100.733427
