@@ -101,6 +101,20 @@ def optimize_route(points):
 
 	return route
 
+def plot_route(points):
+	#Plot results
+	try:
+		import matplotlib.pyplot as plt
+	except:
+		print("Unable to import matplotlib! No plotting allowed :(")
+		return
+
+	x = [route[i][0] for i in range(len(route))]
+	y = [route[i][1] for i in range(len(route))]
+	plt.scatter(x,y)
+	plt.plot(x,y)
+	plt.show()
+
 if __name__ == "__main__":
 
 	#Read file
@@ -118,16 +132,5 @@ if __name__ == "__main__":
 
 	#Write file
 	write_route("../results/example_route25",route)
+	plot_route(route)
 
-	#Plot results
-	try:
-		import matplotlib.pyplot as plt
-	except:
-		print("Unable to import matplotlib! No plotting allowed :(")
-		exit()
-
-	x = [route[i][0] for i in range(len(route))]
-	y = [route[i][1] for i in range(len(route))]
-	plt.scatter(x,y)
-	plt.plot(x,y)
-	plt.show()
