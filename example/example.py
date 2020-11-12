@@ -132,5 +132,7 @@ if __name__ == "__main__":
 
 	#Write file
 	write_route("../results/example_route25",route)
+
+	#Plot results
 	plot_route(route)
 
