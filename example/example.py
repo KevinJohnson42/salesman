@@ -109,8 +109,8 @@ def plot_route(points):
 		print("Unable to import matplotlib! No plotting allowed :(")
 		return
 
-	x = [route[i][0] for i in range(len(route))]
-	y = [route[i][1] for i in range(len(route))]
+	x = [points[i][0] for i in range(len(points))]
+	y = [points[i][1] for i in range(len(points))]
 	plt.scatter(x,y)
 	plt.plot(x,y)
 	plt.show()
@@ -120,6 +120,7 @@ if __name__ == "__main__":
 	#Read file
 	filename = "../routes/route25"
 	points = read_route(filename)
+	plot_route(points)
 
 	#Show current distance
 	old_distance = route_distance(points)
