@@ -38,7 +38,7 @@ int find_duplicate(char*buf, int n)
 
 int main(int argc, char *argv[])
 {
-    int points=5;
+    int points=2;
 
 
     //Buffer
