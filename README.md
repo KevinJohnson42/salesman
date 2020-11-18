@@ -13,9 +13,9 @@ Images - The plots of the results are in "images".
 ### Top scores
 
     KJ_rando_route25         1036.948036
-    KJ_rando_route50         1421.332014
-    KJ_rando_route75         1803.545940
-    KJ_double_edge_route100  2197.143112
+    KJ_rando2_route50        1418.678570
+    KJ_rando2_route75        1756.983753
+    KJ_rando2_route100       2061.006732
     KJ_double_edge_route500  4782.509379
     KJ_double_edge_route1000 6675.472068
 
