@@ -1,0 +1,20 @@
+#!/bin/bash
+# Route Threads Time
+
+mkdir exe
+mkdir results
+gcc source/rando2.c -o exe/rando2 -lm -O3
+for i in $(seq 1 $2)
+do
+    echo $i
+    exe/./rando2 ../routes/$1 results/KJ_rando2_$i$1 $i &
+done
+sleep $3
+pkill -f rando2
+
+for i in $(seq 1 $2)
+do
+  echo "Processing results/KJ_rando2_$i$1"
+  ../util/c/exe/./distance results/KJ_rando2_$i$1
+done
+echo "Done"
