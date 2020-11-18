@@ -13,37 +13,48 @@ Images - The plots of the results are in "images".
 ### Top scores
 
 #### Route25
+![Alt text](images/KJ_rando_route25.png?raw=true "KJ_rando_route25")
+
     1. KJ_rando_route25         1036.948036
     2. KJ_double_edge_route25   1100.733427
     3. KJ_shorty_route25        1100.733427
     4. example_route25          1217.516937
     5.
 #### Route50
+![Alt text](images/KJ_rando2_route50.png?raw=true "KJ_rando2_route50")
+
     1. KJ_rando2_route50        1418.678570
     2. KJ_rando_route50         1421.332014
     3. KJ_double_edge_route50   1630.612894
     4. KJ_shorty_route50        1828.804881
     5. 
 #### Route75
+![Alt text](images/KJ_rando2_route75.png?raw=true "KJ_rando2_route75")
+
     1. KJ_rando2_route75        1756.983753
     2. KJ_rando_route75         1803.545940
     3. KJ_shorty_route75        1983.101872
     4. KJ_double_edge_route75   2073.471324
     5. 
-
 #### Route100
+![Alt text](images/KJ_rando2_route100.png?raw=true "KJ_rando2_route100")
+
     1. KJ_rando2_route100       2020.455552
     2. KJ_double_edge_route100  2197.143112
     3. KJ_shorty_route100       2355.275030
     4. 
     5. 
 #### Route500
+![Alt text](images/KJ_double_edge_route500.png?raw=true "KJ_double_edge_route500")
+
     1. KJ_double_edge_route500  4782.509379
     2. KJ_shorty_route500       5203.577905
     3. 
     4. 
     5. 
 #### Route1000
+![Alt text](images/KJ_double_edge_route1000.png?raw=true "KJ_double_edge_route1000")
+
     1. KJ_double_edge_route1000 6675.472068
     2. KJ_shorty_route1000      7130.381167
     3. 
@@ -55,10 +66,11 @@ Clone the repo
 
     git clone https://github.com/KevinJohnson42/salesman
 
-Create a directory with your name and start writing some code. Place your results in "results" then contact kevin to update scores.
+Read the rules. Create a directory with your name and start writing some code. Place your results in "results" then contact kevin to update scores.
 
 ### Rules
 1. No duplicating or creating new points.
+2. Write your own code.
 
 ### Example
 In route25, there are 50 bytes. Each pair of bytes makes a 2d point (x,y).
