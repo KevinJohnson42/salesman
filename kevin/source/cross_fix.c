@@ -183,7 +183,7 @@ int main(int argc, char *argv[])
                     */
                     swap_points(p,i+1,j);
                     printf("Swap %d %d\n",i+1,j);
-                    goto done;
+                    goto again;
                 }
             }
         }
@@ -201,7 +201,7 @@ int main(int argc, char *argv[])
                 */
                 swap_points(p,i+1,n-1);
                 printf("Swap %d %d\n",i+1,n-1);
-                goto done;
+                goto again;
             }
         }
     }
