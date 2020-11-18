@@ -2,9 +2,13 @@
 
 ### Welcome to the traveling salesman competition.
 
-The routes are located in "routes". Each route consists of a set of 2d points. Each point is represented with 2 signed bytes (-128 to 127). See example for more details.
-The results are located in "results". The result file consists of the route points rearranged in the order of travel. You do not need to include the first point at the end of the file.
-The distances are located in "scores".
+Routes - The routes are located in "routes". Each route consists of a set of 2d points. Each point is represented with 2 signed bytes (-128 to 127). See example for more details.
+
+Results - The results are located in "results". The result file consists of the route points rearranged in the order of travel. You do not need to include the first point at the end of the file.
+
+Scores - The distances are located in "scores".
+
+Images - The plots of the results are in "images".
 
 ### Top scores
 
@@ -16,16 +20,17 @@ The distances are located in "scores".
     KJ_double_edge_route1000 6675.472068
 
 ### Getting started
+Clone the repo
+
+    git clone https://github.com/KevinJohnson42/salesman
+
 Create a directory with your name and start writing some code. Place your results in "results" then contact kevin to update scores.
 
 ### Rules
-1. A file containing the result should start with 0x67,0xc6 because you are not allowed to change the starting point. All routes have the same starting point.
-2. The result file should be the same length as the route.
-3. There should be no duplicate points (This includes both the original route dataset and in the results).
-4. The results should contain the same points as the route, but rearranged in whatever order. No cheating.
+1. No duplicating or creating new points.
 
 ### Example
-In route25, there are 50 bytes. The first two bytes are the starting point. 
+In route25, there are 50 bytes. Each pair of bytes makes a 2d point (x,y).
 
     67 c6 69 73 51 ff 4a ec  29 cd ba ab f2 fb e3 46
     7c c2 54 f8 1b e8 e7 8d  76 5a 2e 63 33 9f c9 9a
@@ -59,4 +64,4 @@ A soultion to route25 with distance = 1100.733427
 ![Alt text](images/KJ_double_edge_route25.png?raw=true "KJ_double_edge_route25")
 
 
-Note: The return to origin (0x67,0xc6) is ommited at the end because it is assumed that the salesman must return home.
+Note: The return to origin (0x67,0xc6) is ommited in the plot, but the distance is still accounted for.
