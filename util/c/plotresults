@@ -3,5 +3,5 @@ FILES=../../results/*
 for f in $FILES
 do
   b=$(basename $f)
-  echo "set term png; set output '../../images/$b.png'; plot '$f' binary format='%char' using 1:2 w linespoints" | gnuplot
+  echo "set term pngcairo; set output '../../images/$b.png'; plot '$f' binary format='%char' using 1:2 w linespoints pt 7 ps 0.5 lw 1" | gnuplot
 done
