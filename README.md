@@ -31,7 +31,7 @@ Images - The plots of the results are in "images".
 #### Route75
 ![Alt text](images/KJ_rando2_route75.png?raw=true "KJ_rando2_route75")
 
-    1. KJ_rando2_route75        1756.983753
+    1. KJ_rando2_route75        1750.370921
     2. KJ_rando_route75         1803.545940
     3. KJ_shorty_route75        1983.101872
     4. KJ_double_edge_route75   2073.471324
