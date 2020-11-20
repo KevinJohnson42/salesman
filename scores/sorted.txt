@@ -5,7 +5,7 @@ example_route25 1217.516937
 KJ_rando2_route50 1418.678570
 KJ_rando_route50 1421.332014
 KJ_double_edge_route50 1630.612894
-KJ_rando2_route75 1756.983753
+KJ_rando2_route75 1750.370921
 KJ_rando_route75 1803.545940
 KJ_shorty_route50 1828.804881
 KJ_shorty_route75 1983.101872
