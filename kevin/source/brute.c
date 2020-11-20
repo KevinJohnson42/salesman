@@ -3,13 +3,19 @@
 #include <float.h>
 #include <math.h>
 
-int debug_count = 0;
 
 typedef struct
 {
     double x;
     double y;
 } point;
+
+unsigned int factorial(unsigned int x)
+{
+    unsigned int y = 1;
+    for(int i=1;i<=x;i++){y *= i;}
+    return y;
+}
 
 
 double distance(point a, point b)
@@ -88,25 +94,32 @@ void swap_points(point*p, int a, int b)
 }
 
 
-void brute(double*best_dist, point*best_route, point*route, int k, point*p, int n)
+void brute(double*best_dist, point*best_route, point*route, int k, point*p, int n, unsigned int*count, unsigned int limit)
 {
     if(k == n-1)
     {
         copy_point(p[k],&route[k]);
-        debug_count++;
         return;
     }
     for(int i=k;i<n;i++)
     {
         copy_point(p[i],&route[k]);
         swap_points(p,k,i);
-        brute(best_dist,best_route,route,k+1,p,n);
+        brute(best_dist,best_route,route,k+1,p,n,count,limit);
         swap_points(p,k,i);
         double d = route_distance(route,n);
         if(d < (*best_dist))
         {
             *best_dist = d;
             copy_path(route,best_route,n);
+        }
+        if(*count == limit)
+        {
+            return; //Need to exit recursive brute
+        }
+        else
+        {
+            *count = *count + 1;
         }
     }
 }
@@ -161,9 +174,19 @@ int main(int argc, char *argv[])
 
 
     //Brute force all the way
-    //brute(&min_dist,min_route,route,0,p,n);
+    unsigned int count = 0; 
+
+    //N!
+    //brute(&min_dist,min_route,route,0,p,n,&count,factorial(n));
+
+    //(N-1)!
+    //brute(&min_dist,min_route,route,1,p,n,&count,factorial(n-1));
+
+    //(N-1)!/2
+    brute(&min_dist,min_route,route,1,p,n,&count,factorial(n-1)/2);
 
     //Brute force kinda
+    /*
     double best_dist = min_dist;
     int depth = 8;
     repeat:;
@@ -177,23 +200,25 @@ int main(int argc, char *argv[])
         if(min_dist < best_dist){best_dist=min_dist;goto repeat;}
 
         //Swaps
-        /*
-        for(int j=0;j<n-depth;j++)
+        if(0)
         {
-            for(int k=n-depth;k<n;k++)
+            for(int j=0;j<n-depth;j++)
             {
-                swap_points(p,j,k);
-                copy_path(p,route,n);
-                brute(&min_dist,min_route,route,n-depth,p,n);
-                copy_path(min_route,p,n);
-                if(min_dist < best_dist){best_dist=min_dist;goto repeat;}
+                for(int k=n-depth;k<n;k++)
+                {
+                    swap_points(p,j,k);
+                    copy_path(p,route,n);
+                    brute(&min_dist,min_route,route,n-depth,p,n);
+                    copy_path(min_route,p,n);
+                    if(min_dist < best_dist){best_dist=min_dist;goto repeat;}
+                }
             }
         }
-        */
     }
+    */
 
     //Show some useful info
-    printf("Debug Count = %d\n",debug_count);
+    printf("Debug Count = %d\n",count);
     printf("Distance = %f\n",min_dist);
 
     //Dump results
